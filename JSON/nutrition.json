@@ -1,0 +1,810 @@
+{
+  "apple_pie": {
+    "calories": 296.0,
+    "protein": 2.7,
+    "carbs": 37.5,
+    "fat": 15.3,
+    "source": "USDA FNDDS: Pie, apple",
+    "approximate": false
+  },
+  "baby_back_ribs": {
+    "calories": 229.0,
+    "protein": 15.2,
+    "carbs": 10.7,
+    "fat": 14.3,
+    "source": "USDA Branded Foods: median of 83 products",
+    "approximate": false
+  },
+  "baklava": {
+    "calories": 440.0,
+    "protein": 6.6,
+    "carbs": 37.5,
+    "fat": 29.3,
+    "source": "USDA FNDDS: Baklava",
+    "approximate": false
+  },
+  "beef_carpaccio": {
+    "calories": 200.0,
+    "protein": 19.0,
+    "carbs": 0.5,
+    "fat": 13.3,
+    "source": "Open Food Facts: median of 76 products",
+    "approximate": false
+  },
+  "beef_tartare": {
+    "calories": 216.0,
+    "protein": 17.4,
+    "carbs": 0.3,
+    "fat": 15.6,
+    "source": "USDA FNDDS: Steak tartare",
+    "approximate": false
+  },
+  "beet_salad": {
+    "calories": 50.0,
+    "protein": 1.3,
+    "carbs": 9.2,
+    "fat": 0.0,
+    "source": "USDA Branded Foods: median of 41 products",
+    "approximate": true
+  },
+  "beignets": {
+    "calories": 417.0,
+    "protein": 5.5,
+    "carbs": 53.7,
+    "fat": 20.2,
+    "source": "USDA FNDDS: Beignet",
+    "approximate": false
+  },
+  "bibimbap": {
+    "calories": 76.0,
+    "protein": 5.5,
+    "carbs": 8.1,
+    "fat": 2.4,
+    "source": "USDA FNDDS: Bibimbap, Korean",
+    "approximate": false
+  },
+  "bread_pudding": {
+    "calories": 156.0,
+    "protein": 5.6,
+    "carbs": 23.5,
+    "fat": 4.9,
+    "source": "USDA FNDDS: Pudding, bread",
+    "approximate": false
+  },
+  "breakfast_burrito": {
+    "calories": 249.0,
+    "protein": 10.9,
+    "carbs": 20.1,
+    "fat": 13.7,
+    "source": "USDA FNDDS: Egg burrito",
+    "approximate": false
+  },
+  "bruschetta": {
+    "calories": 171.0,
+    "protein": 4.3,
+    "carbs": 21.3,
+    "fat": 7.6,
+    "source": "USDA FNDDS: Bruschetta",
+    "approximate": false
+  },
+  "caesar_salad": {
+    "calories": 77.0,
+    "protein": 4.0,
+    "carbs": 7.5,
+    "fat": 3.4,
+    "source": "USDA FNDDS: Caesar salad, with romaine, no dressing",
+    "approximate": false
+  },
+  "cannoli": {
+    "calories": 341.0,
+    "protein": 7.8,
+    "carbs": 40.0,
+    "fat": 15.3,
+    "source": "USDA Branded Foods: median of 48 products",
+    "approximate": false
+  },
+  "caprese_salad": {
+    "calories": 168.0,
+    "protein": 4.5,
+    "carbs": 10.4,
+    "fat": 10.7,
+    "source": "USDA Branded Foods: median of 67 products",
+    "approximate": true
+  },
+  "carrot_cake": {
+    "calories": 374.0,
+    "protein": 2.5,
+    "carbs": 51.8,
+    "fat": 17.5,
+    "source": "USDA FNDDS: Cake or cupcake, carrot",
+    "approximate": false
+  },
+  "ceviche": {
+    "calories": 63.0,
+    "protein": 10.5,
+    "carbs": 3.6,
+    "fat": 0.8,
+    "source": "USDA FNDDS: Ceviche",
+    "approximate": false
+  },
+  "cheese_plate": {
+    "calories": 302.0,
+    "protein": 18.6,
+    "carbs": 4.7,
+    "fat": 23.3,
+    "source": "USDA Branded Foods: median of 56 products",
+    "approximate": false
+  },
+  "cheesecake": {
+    "calories": 399.0,
+    "protein": 5.3,
+    "carbs": 34.8,
+    "fat": 26.5,
+    "source": "USDA FNDDS: Cheesecake, plain",
+    "approximate": false
+  },
+  "chicken_curry": {
+    "calories": 107.0,
+    "protein": 6.5,
+    "carbs": 6.5,
+    "fat": 6.5,
+    "source": "USDA FNDDS: Chicken curry",
+    "approximate": false
+  },
+  "chicken_quesadilla": {
+    "calories": 287.0,
+    "protein": 14.4,
+    "carbs": 27.3,
+    "fat": 13.0,
+    "source": "USDA FNDDS: Quesadilla, chicken",
+    "approximate": false
+  },
+  "chicken_wings": {
+    "calories": 257.0,
+    "protein": 23.4,
+    "carbs": 0.6,
+    "fat": 18.0,
+    "source": "USDA FNDDS: Chicken wing, NS as to cooking method",
+    "approximate": false
+  },
+  "chocolate_cake": {
+    "calories": 345.0,
+    "protein": 3.3,
+    "carbs": 52.2,
+    "fat": 15.2,
+    "source": "USDA FNDDS: Cake or cupcake, chocolate with chocolate icing, bakery",
+    "approximate": false
+  },
+  "chocolate_mousse": {
+    "calories": 306.0,
+    "protein": 3.2,
+    "carbs": 32.5,
+    "fat": 21.2,
+    "source": "USDA Branded Foods: median of 97 products",
+    "approximate": false
+  },
+  "churros": {
+    "calories": 419.0,
+    "protein": 6.0,
+    "carbs": 48.9,
+    "fat": 22.2,
+    "source": "USDA FNDDS: Churros",
+    "approximate": false
+  },
+  "clam_chowder": {
+    "calories": 93.0,
+    "protein": 3.1,
+    "carbs": 9.2,
+    "fat": 4.8,
+    "source": "USDA FNDDS: Soup, New England clam chowder",
+    "approximate": false
+  },
+  "club_sandwich": {
+    "calories": 222.0,
+    "protein": 15.1,
+    "carbs": 23.1,
+    "fat": 7.5,
+    "source": "USDA FNDDS: Club sandwich on white",
+    "approximate": false
+  },
+  "crab_cakes": {
+    "calories": 214.0,
+    "protein": 14.4,
+    "carbs": 4.5,
+    "fat": 15.0,
+    "source": "USDA FNDDS: Crab, cake",
+    "approximate": false
+  },
+  "creme_brulee": {
+    "calories": 113.0,
+    "protein": 4.1,
+    "carbs": 17.9,
+    "fat": 2.8,
+    "source": "USDA FNDDS: Creme brulee",
+    "approximate": false
+  },
+  "croque_madame": {
+    "calories": 238.0,
+    "protein": 11.0,
+    "carbs": 25.2,
+    "fat": 10.0,
+    "source": "Open Food Facts: median of 37 products (croque monsieur products)",
+    "approximate": true
+  },
+  "cup_cakes": {
+    "calories": 352.0,
+    "protein": 2.8,
+    "carbs": 53.6,
+    "fat": 14.8,
+    "source": "USDA FNDDS: Cake or cupcake, NFS",
+    "approximate": false
+  },
+  "deviled_eggs": {
+    "calories": 198.0,
+    "protein": 11.5,
+    "carbs": 1.1,
+    "fat": 15.9,
+    "source": "USDA FNDDS: Egg, deviled",
+    "approximate": false
+  },
+  "donuts": {
+    "calories": 426.0,
+    "protein": 5.5,
+    "carbs": 49.5,
+    "fat": 22.9,
+    "source": "USDA FNDDS: Doughnut, NFS",
+    "approximate": false
+  },
+  "dumplings": {
+    "calories": 113.0,
+    "protein": 6.9,
+    "carbs": 11.1,
+    "fat": 4.6,
+    "source": "USDA FNDDS: Wonton, dumpling or pot sticker, steamed",
+    "approximate": false
+  },
+  "edamame": {
+    "calories": 140.0,
+    "protein": 11.5,
+    "carbs": 8.6,
+    "fat": 7.6,
+    "source": "USDA FNDDS: Edamame, cooked",
+    "approximate": false
+  },
+  "eggs_benedict": {
+    "calories": 288.0,
+    "protein": 13.8,
+    "carbs": 8.5,
+    "fat": 22.1,
+    "source": "USDA FNDDS: Egg, Benedict",
+    "approximate": false
+  },
+  "escargots": {
+    "calories": 158.0,
+    "protein": 20.0,
+    "carbs": 2.5,
+    "fat": 6.9,
+    "source": "USDA FNDDS: Escargot",
+    "approximate": false
+  },
+  "falafel": {
+    "calories": 514.0,
+    "protein": 8.3,
+    "carbs": 29.0,
+    "fat": 41.2,
+    "source": "USDA FNDDS: Falafel",
+    "approximate": false
+  },
+  "filet_mignon": {
+    "calories": 196.0,
+    "protein": 30.5,
+    "carbs": 0.0,
+    "fat": 8.2,
+    "source": "USDA FNDDS: Beef, steak, tenderloin",
+    "approximate": false
+  },
+  "fish_and_chips": {
+    "calories": 214.0,
+    "protein": 7.6,
+    "carbs": 22.8,
+    "fat": 9.7,
+    "source": "USDA Branded Foods: median of 6 products",
+    "approximate": true
+  },
+  "foie_gras": {
+    "calories": 375.0,
+    "protein": 8.9,
+    "carbs": 3.6,
+    "fat": 37.5,
+    "source": "USDA Branded Foods: median of 14 products",
+    "approximate": false
+  },
+  "french_fries": {
+    "calories": 225.0,
+    "protein": 2.5,
+    "carbs": 23.2,
+    "fat": 14.1,
+    "source": "USDA FNDDS: Potato, french fries, NFS",
+    "approximate": false
+  },
+  "french_onion_soup": {
+    "calories": 108.0,
+    "protein": 5.5,
+    "carbs": 11.8,
+    "fat": 4.5,
+    "source": "USDA FNDDS: Soup, French onion",
+    "approximate": false
+  },
+  "french_toast": {
+    "calories": 273.0,
+    "protein": 10.4,
+    "carbs": 32.3,
+    "fat": 11.4,
+    "source": "USDA FNDDS: French toast, NFS",
+    "approximate": false
+  },
+  "fried_calamari": {
+    "calories": 234.0,
+    "protein": 13.8,
+    "carbs": 14.1,
+    "fat": 13.2,
+    "source": "USDA FNDDS: Calamari, fried",
+    "approximate": false
+  },
+  "fried_rice": {
+    "calories": 174.0,
+    "protein": 3.8,
+    "carbs": 32.5,
+    "fat": 3.2,
+    "source": "USDA FNDDS: Rice, fried, NFS",
+    "approximate": false
+  },
+  "frozen_yogurt": {
+    "calories": 127.0,
+    "protein": 3.0,
+    "carbs": 21.6,
+    "fat": 3.6,
+    "source": "USDA FNDDS: Frozen yogurt, NFS",
+    "approximate": false
+  },
+  "garlic_bread": {
+    "calories": 349.0,
+    "protein": 8.3,
+    "carbs": 41.6,
+    "fat": 16.6,
+    "source": "USDA FNDDS: Garlic bread, NFS",
+    "approximate": false
+  },
+  "gnocchi": {
+    "calories": 135.0,
+    "protein": 2.4,
+    "carbs": 17.2,
+    "fat": 6.3,
+    "source": "USDA FNDDS: Gnocchi, potato",
+    "approximate": false
+  },
+  "greek_salad": {
+    "calories": 48.0,
+    "protein": 2.8,
+    "carbs": 4.3,
+    "fat": 2.3,
+    "source": "USDA FNDDS: Greek Salad, no dressing",
+    "approximate": false
+  },
+  "grilled_cheese_sandwich": {
+    "calories": 343.0,
+    "protein": 11.0,
+    "carbs": 28.1,
+    "fat": 20.8,
+    "source": "USDA FNDDS: Grilled cheese sandwich, NFS",
+    "approximate": false
+  },
+  "grilled_salmon": {
+    "calories": 259.0,
+    "protein": 25.9,
+    "carbs": 0.0,
+    "fat": 16.5,
+    "source": "USDA FNDDS: Fish, salmon, grilled",
+    "approximate": false
+  },
+  "guacamole": {
+    "calories": 155.0,
+    "protein": 1.9,
+    "carbs": 8.4,
+    "fat": 14.2,
+    "source": "USDA FNDDS: Guacamole, NFS",
+    "approximate": false
+  },
+  "gyoza": {
+    "calories": 192.0,
+    "protein": 8.8,
+    "carbs": 14.1,
+    "fat": 11.1,
+    "source": "USDA FNDDS: Wonton, dumpling or pot sticker, fried",
+    "approximate": false
+  },
+  "hamburger": {
+    "calories": 288.0,
+    "protein": 17.5,
+    "carbs": 20.7,
+    "fat": 14.4,
+    "source": "USDA FNDDS: Hamburger, NFS",
+    "approximate": false
+  },
+  "hot_and_sour_soup": {
+    "calories": 39.0,
+    "protein": 2.6,
+    "carbs": 4.3,
+    "fat": 1.2,
+    "source": "USDA FNDDS: Soup, hot and sour",
+    "approximate": false
+  },
+  "hot_dog": {
+    "calories": 296.0,
+    "protein": 10.8,
+    "carbs": 23.7,
+    "fat": 17.4,
+    "source": "USDA FNDDS: Hot dog sandwich, NFS, on white bun",
+    "approximate": false
+  },
+  "huevos_rancheros": {
+    "calories": 121.0,
+    "protein": 6.7,
+    "carbs": 8.8,
+    "fat": 6.7,
+    "source": "USDA FNDDS: Huevos rancheros",
+    "approximate": false
+  },
+  "hummus": {
+    "calories": 243.0,
+    "protein": 7.3,
+    "carbs": 14.9,
+    "fat": 17.1,
+    "source": "USDA FNDDS: Hummus, plain",
+    "approximate": false
+  },
+  "ice_cream": {
+    "calories": 221.0,
+    "protein": 3.6,
+    "carbs": 26.4,
+    "fat": 11.3,
+    "source": "USDA FNDDS: Ice cream, NFS",
+    "approximate": false
+  },
+  "lasagna": {
+    "calories": 139.0,
+    "protein": 7.5,
+    "carbs": 16.2,
+    "fat": 5.0,
+    "source": "USDA FNDDS: Lasagna with meat",
+    "approximate": false
+  },
+  "lobster_bisque": {
+    "calories": 117.0,
+    "protein": 2.9,
+    "carbs": 6.5,
+    "fat": 8.6,
+    "source": "USDA Branded Foods: median of 169 products",
+    "approximate": false
+  },
+  "lobster_roll_sandwich": {
+    "calories": 221.0,
+    "protein": 9.9,
+    "carbs": 22.7,
+    "fat": 7.3,
+    "source": "USDA Branded Foods: median of 9 products",
+    "approximate": false
+  },
+  "macaroni_and_cheese": {
+    "calories": 223.0,
+    "protein": 8.7,
+    "carbs": 23.1,
+    "fat": 10.5,
+    "source": "USDA FNDDS: Macaroni or noodles with cheese",
+    "approximate": false
+  },
+  "macarons": {
+    "calories": 409.0,
+    "protein": 7.7,
+    "carbs": 52.8,
+    "fat": 20.4,
+    "source": "USDA Branded Foods: median of 155 products",
+    "approximate": false
+  },
+  "miso_soup": {
+    "calories": 24.0,
+    "protein": 2.2,
+    "carbs": 2.3,
+    "fat": 0.8,
+    "source": "USDA FNDDS: Soup, miso or tofu",
+    "approximate": false
+  },
+  "mussels": {
+    "calories": 109.0,
+    "protein": 15.1,
+    "carbs": 4.7,
+    "fat": 2.8,
+    "source": "USDA FNDDS: Mussels",
+    "approximate": false
+  },
+  "nachos": {
+    "calories": 265.0,
+    "protein": 7.6,
+    "carbs": 23.9,
+    "fat": 15.8,
+    "source": "USDA FNDDS: Nachos, NFS",
+    "approximate": false
+  },
+  "omelette": {
+    "calories": 185.0,
+    "protein": 11.6,
+    "carbs": 0.9,
+    "fat": 15.0,
+    "source": "USDA FNDDS: Egg omelet or scrambled egg, NS as to fat",
+    "approximate": false
+  },
+  "onion_rings": {
+    "calories": 352.0,
+    "protein": 4.2,
+    "carbs": 39.9,
+    "fat": 19.8,
+    "source": "USDA FNDDS: Fried onion rings",
+    "approximate": false
+  },
+  "oysters": {
+    "calories": 51.0,
+    "protein": 5.7,
+    "carbs": 2.7,
+    "fat": 1.7,
+    "source": "USDA FNDDS: Oysters, raw",
+    "approximate": false
+  },
+  "pad_thai": {
+    "calories": 154.0,
+    "protein": 8.1,
+    "carbs": 14.4,
+    "fat": 7.5,
+    "source": "USDA FNDDS: Pad Thai, NFS",
+    "approximate": false
+  },
+  "paella": {
+    "calories": 169.0,
+    "protein": 9.5,
+    "carbs": 15.8,
+    "fat": 7.2,
+    "source": "USDA FNDDS: Paella, NFS",
+    "approximate": false
+  },
+  "pancakes": {
+    "calories": 282.0,
+    "protein": 7.4,
+    "carbs": 35.3,
+    "fat": 12.1,
+    "source": "USDA FNDDS: Pancakes, NFS",
+    "approximate": false
+  },
+  "panna_cotta": {
+    "calories": 220.0,
+    "protein": 3.0,
+    "carbs": 26.9,
+    "fat": 10.4,
+    "source": "USDA Branded Foods: median of 12 products",
+    "approximate": true
+  },
+  "peking_duck": {
+    "calories": 154.0,
+    "protein": 5.3,
+    "carbs": 6.5,
+    "fat": 11.8,
+    "source": "USDA FNDDS: Duck, Peking",
+    "approximate": false
+  },
+  "pho": {
+    "calories": 77.0,
+    "protein": 5.8,
+    "carbs": 5.6,
+    "fat": 3.3,
+    "source": "USDA FNDDS: Soup, pho, with meat",
+    "approximate": false
+  },
+  "pizza": {
+    "calories": 266.0,
+    "protein": 11.4,
+    "carbs": 33.3,
+    "fat": 9.7,
+    "source": "USDA FNDDS: Pizza, cheese, from restaurant or fast food, medium crust",
+    "approximate": false
+  },
+  "pork_chop": {
+    "calories": 183.0,
+    "protein": 27.5,
+    "carbs": 0.0,
+    "fat": 7.5,
+    "source": "USDA FNDDS: Pork, chop, NS as to fat eaten",
+    "approximate": false
+  },
+  "poutine": {
+    "calories": 191.2,
+    "protein": 5.1,
+    "carbs": 18.8,
+    "fat": 9.9,
+    "source": "Open Food Facts: median of 8 products",
+    "approximate": true
+  },
+  "prime_rib": {
+    "calories": 351.0,
+    "protein": 22.8,
+    "carbs": 0.0,
+    "fat": 28.1,
+    "source": "USDA SR Legacy: Beef, rib, whole (ribs 6-12), lean and fat, roasted",
+    "approximate": false
+  },
+  "pulled_pork_sandwich": {
+    "calories": 243.0,
+    "protein": 15.0,
+    "carbs": 24.9,
+    "fat": 8.8,
+    "source": "USDA FNDDS: Barbecue pork sandwich, on white bun",
+    "approximate": false
+  },
+  "ramen": {
+    "calories": 127.0,
+    "protein": 7.1,
+    "carbs": 13.9,
+    "fat": 4.6,
+    "source": "USDA FNDDS: Ramen bowl, NFS",
+    "approximate": false
+  },
+  "ravioli": {
+    "calories": 138.0,
+    "protein": 6.9,
+    "carbs": 14.6,
+    "fat": 5.9,
+    "source": "USDA FNDDS: Ravioli, NS as to filling, with tomato sauce",
+    "approximate": false
+  },
+  "red_velvet_cake": {
+    "calories": 355.0,
+    "protein": 2.8,
+    "carbs": 54.4,
+    "fat": 14.6,
+    "source": "USDA FNDDS: Cake or cupcake, red velvet",
+    "approximate": false
+  },
+  "risotto": {
+    "calories": 122.0,
+    "protein": 3.5,
+    "carbs": 17.1,
+    "fat": 4.0,
+    "source": "USDA Branded Foods: median of 365 products",
+    "approximate": true
+  },
+  "samosa": {
+    "calories": 310.0,
+    "protein": 5.1,
+    "carbs": 33.2,
+    "fat": 17.5,
+    "source": "USDA FNDDS: Samosa",
+    "approximate": false
+  },
+  "sashimi": {
+    "calories": 109.0,
+    "protein": 24.4,
+    "carbs": 0.0,
+    "fat": 0.5,
+    "source": "USDA SR Legacy: Fish, tuna, fresh, yellowfin, raw (salmon sashimi is fattier)",
+    "approximate": true
+  },
+  "scallops": {
+    "calories": 126.0,
+    "protein": 15.0,
+    "carbs": 4.0,
+    "fat": 5.1,
+    "source": "USDA FNDDS: Scallops, baked or broiled",
+    "approximate": false
+  },
+  "seaweed_salad": {
+    "calories": 70.0,
+    "protein": 1.0,
+    "carbs": 10.3,
+    "fat": 4.7,
+    "source": "USDA Branded Foods: median of 28 products",
+    "approximate": false
+  },
+  "shrimp_and_grits": {
+    "calories": 190.0,
+    "protein": 8.8,
+    "carbs": 12.5,
+    "fat": 8.3,
+    "source": "USDA Branded Foods: median of 15 products",
+    "approximate": false
+  },
+  "spaghetti_bolognese": {
+    "calories": 178.0,
+    "protein": 5.4,
+    "carbs": 17.7,
+    "fat": 9.2,
+    "source": "USDA FNDDS: Pasta with tomato-based sauce and meat, restaurant",
+    "approximate": false
+  },
+  "spaghetti_carbonara": {
+    "calories": 188.0,
+    "protein": 10.0,
+    "carbs": 16.5,
+    "fat": 7.4,
+    "source": "USDA Branded Foods: median of 57 products",
+    "approximate": false
+  },
+  "spring_rolls": {
+    "calories": 270.0,
+    "protein": 5.6,
+    "carbs": 30.0,
+    "fat": 14.1,
+    "source": "USDA FNDDS: Egg roll, meatless",
+    "approximate": false
+  },
+  "steak": {
+    "calories": 229.0,
+    "protein": 27.0,
+    "carbs": 0.0,
+    "fat": 12.9,
+    "source": "USDA FNDDS: Beef, steak, NFS",
+    "approximate": false
+  },
+  "strawberry_shortcake": {
+    "calories": 214.0,
+    "protein": 3.3,
+    "carbs": 40.1,
+    "fat": 4.7,
+    "source": "USDA FNDDS: Cake, strawberry shortcake",
+    "approximate": false
+  },
+  "sushi": {
+    "calories": 94.0,
+    "protein": 2.9,
+    "carbs": 18.4,
+    "fat": 0.7,
+    "source": "USDA FNDDS: Sushi, NFS",
+    "approximate": false
+  },
+  "tacos": {
+    "calories": 246.0,
+    "protein": 15.3,
+    "carbs": 15.6,
+    "fat": 13.6,
+    "source": "USDA FNDDS: Taco, NFS",
+    "approximate": false
+  },
+  "takoyaki": {
+    "calories": 170.0,
+    "protein": 5.0,
+    "carbs": 28.0,
+    "fat": 2.0,
+    "source": "Open Food Facts: Takoyaki (middle of 3 products)",
+    "approximate": true
+  },
+  "tiramisu": {
+    "calories": 353.0,
+    "protein": 5.7,
+    "carbs": 29.4,
+    "fat": 23.9,
+    "source": "USDA FNDDS: Tiramisu",
+    "approximate": false
+  },
+  "tuna_tartare": {
+    "calories": 109.0,
+    "protein": 24.4,
+    "carbs": 0.0,
+    "fat": 0.5,
+    "source": "USDA SR Legacy: Fish, tuna, fresh, yellowfin, raw (no dressing included)",
+    "approximate": true
+  },
+  "waffles": {
+    "calories": 309.0,
+    "protein": 7.4,
+    "carbs": 48.4,
+    "fat": 9.5,
+    "source": "USDA FNDDS: Waffle, NFS",
+    "approximate": false
+  }
+}

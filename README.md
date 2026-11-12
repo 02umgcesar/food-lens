@@ -52,7 +52,7 @@ These were measured on 505 Food-101 test photos (5 per dish) and 398 photos of t
 Requires Python 3.12.
 
 ```bash
-pip install torch torchvision "fastapi[standard]" transformers pillow
+python3 -m pip install -r requirements.txt
 fastapi dev main.py
 ```
 
@@ -69,20 +69,6 @@ Then open **http://127.0.0.1:8000**.
 
 Interactive API docs are at **http://127.0.0.1:8000/docs**.
 
-## Project structure
-
-```
-main.py                       FastAPI app: model loading, the 4 filters, endpoints
-helper_functions.py           Small helpers (JSON loading, class-name parsing)
-index.html                    Web page (upload, results, dish search)
-effnetv2s_101_384 (91%).pt    Trained model weights (EfficientNetV2-S, 384×384)
-centroids.pt                  Average fingerprint for each dish + similarity threshold (filter 1)
-JSON/
-  class_names.json            The 101 dishes, in the model's output order
-  nutrition.json              Nutrition per 100 g for each dish, with its source
-  other_prompts.json          Generic "not a dish" labels for the CLIP check (filter 3)
-try_these/                    Sample photos to try
-```
 
 ## Data and credits
 

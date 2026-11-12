@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Lens</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #f6f6f4; color: #222; margin: 0; }
+    main { max-width: 480px; margin: 40px auto; padding: 0 16px; }
+    h1 { margin-bottom: 4px; text-align: center; }
+    .sub { color: #666; margin-top: 0; text-align: center; }
+    .card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.08); margin-top: 16px; }
+    img { width: 100%; border-radius: 8px; display: none; margin-top: 12px; }
+    button { width: 100%; padding: 12px; margin-top: 12px; border: 0; border-radius: 8px;
+             background: #222; color: #fff; font-size: 16px; cursor: pointer; }
+    button:disabled { background: #999; cursor: default; }
+    #result h2 { margin: 0 0 12px; text-transform: capitalize; }
+    table { width: 100%; border-collapse: collapse; }
+    td { padding: 6px 0; border-bottom: 1px solid #eee; }
+    td:last-child { text-align: right; font-weight: 600; }
+    .muted { color: #666; }
+    h3 { margin-top: 0; text-align: center;}
+    #search { width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+    .letter { font-weight: 700; color: #999; margin: 14px 0 4px; padding-bottom: 2px; border-bottom: 1px solid #eee; }
+    #dishes ul { columns: 2; padding-left: 18px; margin: 0; text-transform: capitalize; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Food Lens</h1>
+  <p class="sub">Upload a photo of a dish to see what it is and its nutrition.</p>
+
+  <div class="card">
+    <input type="file" id="file" accept="image/*">
+    <img id="preview" alt="Your photo">
+    <button id="go" disabled>Identify dish</button>
+  </div>
+
+  <div class="card" id="result" hidden></div>
+
+  <div class="card">
+    <h3>Dishes I can recognize</h3>
+    <input type="search" id="search" placeholder="Search a food, e.g. ramen">
+    <p id="search-msg" class="muted"></p>
+    <div id="dishes" hidden></div>
+    <button id="show-all">Show all dishes</button>
+  </div>
+</main>
+
+<script>
+  const fileInput = document.getElementById("file");
+  const preview = document.getElementById("preview");
+  const button = document.getElementById("go");
+  const result = document.getElementById("result");
+
+  fileInput.addEventListener("change", () => {
+    const file = fileInput.files[0];
+    if (!file) return;
+    preview.src = URL.createObjectURL(file);
+    preview.style.display = "block";
+    button.disabled = false;
+    result.hidden = true;
+  });
+
+  button.addEventListener("click", async () => {
+    const form = new FormData();
+    form.append("file", fileInput.files[0]);
+    button.disabled = true;
+    button.textContent = "Identifying…";
+
+    try {
+      const res = await fetch("/predict", { method: "POST", body: form });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || "Something went wrong");
+
+      if (data.prediction) {
+        const n = data.nutrition_per_100g;
+        result.innerHTML = `
+          <h2>${data.prediction.replaceAll("_", " ")}</h2>
+          <p class="muted">Nutrition per 100 g</p>
+          <table>
+            <tr><td>Calories</td><td>${n.calories} kcal</td></tr>
+            <tr><td>Protein</td><td>${n.protein_g} g</td></tr>
+            <tr><td>Carbs</td><td>${n.carbs_g} g</td></tr>
+            <tr><td>Fat</td><td>${n.fat_g} g</td></tr>
+          </table>`;
+      } else {
+        result.innerHTML = `<h2>Not recognized</h2>
+          <p class="muted">This doesn't look like one of the 101 dishes I know.</p>`;
+      }
+    } catch (err) {
+      result.innerHTML = `<h2>Error</h2><p class="muted">${err.message}</p>`;
+    }
+
+    result.hidden = false;
+    button.disabled = false;
+    button.textContent = "Identify dish";
+  });
+
+  // --- Browse / search the dishes the model knows ---
+  const search = document.getElementById("search");
+  const searchMsg = document.getElementById("search-msg");
+  const list = document.getElementById("dishes");
+  const showAll = document.getElementById("show-all");
+  const pretty = (name) => name.replaceAll("_", " ");
+  let dishes = [];
+  let showingAll = false;
+
+  function renderDishes() {
+    const query = search.value.trim().toLowerCase().replaceAll("_", " ");
+    const matches = query ? dishes.filter((d) => pretty(d).includes(query)) : dishes;
+
+    if (!query) searchMsg.textContent = "";
+    else if (matches.length) searchMsg.textContent = `${matches.length} match${matches.length > 1 ? "es" : ""}`;
+    else searchMsg.textContent = `"${search.value.trim()}" isn't one of the ${dishes.length} dishes I know.`;
+
+    // Group the (already alphabetical) dishes under their first letter
+    const groups = {};
+    for (const d of matches) (groups[d[0].toUpperCase()] ??= []).push(d);
+    list.innerHTML = Object.entries(groups).map(([letter, names]) =>
+      `<div class="letter">${letter}</div><ul>${names.map((d) => `<li>${pretty(d)}</li>`).join("")}</ul>`
+    ).join("");
+    list.hidden = !(query || showingAll) || matches.length === 0;
+    showAll.hidden = Boolean(query);
+    showAll.textContent = showingAll ? "Hide list" : `Show all`;
+  }
+
+  fetch("/get-all-classes").then((res) => res.json()).then((data) => {
+    dishes = data.classes;
+    renderDishes();
+  });
+  search.addEventListener("input", renderDishes);
+  showAll.addEventListener("click", () => { showingAll = !showingAll; renderDishes(); });
+</script>
+</body>
+</html>
